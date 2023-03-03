@@ -34,3 +34,9 @@ It would be better if you brought your PC to class. Some experiments will be run
 -   WTP vs WTA: <https://forms.gle/9v6fynXuGS1R531aA>
 
 -   Social norm: <https://forms.gle/3tvdF6CKQ5w3v4iw7>
+
+#### Session 1 -- Lab session
+
+-   experimental software: <https://gaelexperience.fr/>
+
+-   statistical software: anything, really, but I'll use R
