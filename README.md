@@ -15,6 +15,8 @@ It would be better if you brought your PC to class. Some experiments will be run
 
 ## Links for experiments
 
+## Session 1
+
 ### Session 1 -- part 1 -- why and how experiments
 
 -   Questionnaire 1: <https://forms.gle/GnoTw3SvmX3VRZxM9>
@@ -35,8 +37,28 @@ It would be better if you brought your PC to class. Some experiments will be run
 
 -   Social norm: <https://forms.gle/3tvdF6CKQ5w3v4iw7>
 
-#### Session 1 -- Lab session
+### Session 1 -- Lab session
 
 -   experimental software: <https://gaelexperience.fr/>
 
 -   statistical software: anything, really, but I'll use R
+
+## Session 2
+
+### Session 2 -- classroom
+
+-   Questionnaire 1: <https://forms.gle/ZdRcPH4fRVDJ6rcd7>
+
+### Session 2 - Lab session
+
+-   price list
+
+-   bret
+
+-   balloon
+
+-   investment game
+
+-   lottery selection
+
+-   certainty equivalent
