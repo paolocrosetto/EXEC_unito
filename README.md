@@ -48,6 +48,7 @@ It would be better if you brought your PC to class. Some experiments will be run
 ### Session 2 -- classroom
 
 -   Questionnaire 1: <https://forms.gle/ZdRcPH4fRVDJ6rcd7>
+-   Meat-analysis website: <https://paolocrosetto.shinyapps.io/METARET_APP/>
 
 ### Session 2 - Lab session
 
