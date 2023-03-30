@@ -55,7 +55,25 @@ The course is organised over 4 interventions. Each intervention covers two sessi
 
 -   Value in isolation vs value in a social setting: BDM in private vs when observed/oserving
 
-### Lecture 2 -- 30-31 March -- Consumer biases
+### Lecture 2 -- 30-31 March -- Risk elicitation
+
+#### Class session
+
+-   **theoretical considerations**: what is risk, how to measure it, theoretical assumptions;
+
+-   **existing methods**: differing approaches in econ & psychology, different tools;
+
+-   **empirical problems**: hypothetical bias, cognitive limits, noise;
+
+-   **external validity**: does all this work?
+
+-   a **meta-analysis**: looking at \~20k subjects, over \~10 tasks
+
+#### Lab session
+
+-   running different risk elicitation tasks in the lab
+
+### Lecture 3 -- 13-14 April -- Consumer biases
 
 #### Class session
 
@@ -73,8 +91,6 @@ The course is organised over 4 interventions. Each intervention covers two sessi
 
 -   biases or heuristics?
 
--   a **meta-analysis**: looking at \~20k subjects, over \~10 tasks
-
 #### Lab session
 
 -   identifying our own biases through experimentation
@@ -83,23 +99,6 @@ The course is organised over 4 interventions. Each intervention covers two sessi
 
 -   analyzing fast & slow data
 
-### Lecture 3 -- 13-14 April -- Risk elicitation
-
-#### Class session
-
--   **theoretical considerations**: what is risk, how to measure it, theoretical assumptions;
-
--   **existing methods**: differing approaches in econ & psychology, different tools;
-
--   **empirical problems**: hypothetical bias, cognitive limits, noise;
-
--   **external validity**: does all this work?
-
--   a **meta-analysis**: looking at \~20k subjects, over \~10 tasks
-
-#### Lab session
-
--   running different risk elicitation tasks in the lab
 
 ### Lecture 4 -- 27-28 April -- Nutritional food labeling
 
