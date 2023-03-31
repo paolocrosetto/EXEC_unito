@@ -257,6 +257,5 @@ dfr %>%
   ungroup() %>% 
   select(-ID, -gender) %>% 
   pairs(diag.panel = panel.hist, upper.panel = panel.cor)
-d  
 
 
