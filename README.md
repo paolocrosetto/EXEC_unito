@@ -52,14 +52,4 @@ It would be better if you brought your PC to class. Some experiments will be run
 
 ### Session 2 - Lab session
 
--   price list
-
--   bret
-
--   balloon
-
--   investment game
-
--   lottery selection
-
--   certainty equivalent
+-   Full risk elicitation session: <https://paolocrosetto.aidaform.com/expert-template-risk-taking-test>
