@@ -4,7 +4,9 @@ library(janitor)
 
 #### 1. reading in the file ####
 
-df <- read_csv("Data/responses_playground.csv")
+rawdf <- read_csv("Data/Session_2_raw_sata.csv")
+
+df <- rawdf
 
 
 #### 2. data cleaning ####
@@ -16,12 +18,9 @@ df <- df %>% clean_names()
 new_names <- c("ID", "Created", "Link", 
                paste0("D", seq(1,30)), 
                "SOEP", "investment", "lottery", "bret", 
-               paste0("HL", seq(1:10)),
+               "HL01", "HL10", "HL02", "HL03", "HL04", 
+               "HL05", "HL06", "HL07", "HL08", "HL09", 
                "nickname", "gender")
-
-## kill this later!
-df <- df %>% 
-  mutate(gender = "F")
 
 ## apply new names
 names(df) <- new_names
@@ -49,7 +48,7 @@ df <- df %>%
 
 ## cleaning the eckel-grossman lottery selection task
 df <- df %>% 
-  mutate(lottery = str_match(lottery, "\\((\\d+)\\)")[,2])
+  mutate(lottery = as.integer(str_sub(lottery, end = 2)))
 
 ## cleaning the holt and laury task
 ## recode "1" as a safe option
@@ -73,7 +72,9 @@ df <- df %>%
 
 ### method 1: counting safe options
 df <- df %>% 
-  mutate(safeHL = sum(HL1, HL2, HL3, HL4, HL5, HL6, HL7, HL8, HL9, HL10))
+  group_by(ID) %>% 
+  mutate(safeHL = sum(HL01, HL02, HL03, HL04, HL05, HL06, 
+                      HL07, HL08, HL09, HL10))
 
 
 #### 5. just concentrate on the needed variables to have ahandy dataset ####
@@ -90,7 +91,67 @@ df <- df %>%
 
 ## task by task: distributions
 
+## SOEP: you are more "moderate" than the usual subject pool
+df %>% 
+  ggplot(aes(SOEP))+
+  geom_histogram()
+
+## DOSPERT
+df %>% 
+  select(starts_with("spe")) %>% 
+  gather(key, value, -ID) %>% 
+  ggplot(aes(value, color = key))+
+  geom_density(size = 2)+
+  facet_grid(key~.)+
+  hrbrthemes::theme_ipsum_ps()
+
+## dospert one by one
+df %>% 
+  ggplot(aes(spe_health))+
+  geom_density()
+  
+## investment game
+theme_set(hrbrthemes::theme_ipsum_es())
+
+df %>% 
+  ggplot(aes(investment))+
+  geom_density(size = 2, color = "pink")
+
+## bomb task
+
+df %>% 
+  ggplot(aes(bret))+
+  geom_density(size = 2, color = "pink")+
+  geom_vline(xintercept = 50, color = "red")
+
+## lottery task
+df %>% 
+  ggplot(aes(lottery))+
+  geom_bar(fill = "blue")+
+  geom_vline(xintercept = 4.5, color = "red")
+
+## HL
+df %>% 
+  ggplot(aes(safeHL))+
+  geom_bar(fill = "blue")+
+  geom_vline(xintercept = 5, color = "red")
+
 ## task by task: gender effects
+
+df %>% 
+  ungroup() %>% 
+  select(-ID, -gender) %>% 
+  gather(key, value, -nickname) %>% 
+  group_by(key) %>% 
+  group_modify(~broom::tidy(t.test(.$value~.$nickname)))
+
+df %>% 
+  ungroup() %>% 
+  select(-ID, -gender) %>% 
+  gather(key, value, -nickname) %>% 
+  group_by(key, nickname) %>% 
+  summarise(mean = mean(value)) %>% 
+  spread(nickname, mean)
 
 ## correlation
 
@@ -113,11 +174,12 @@ panel.cor <- function(x, y, digits = 2, prefix = "", cex.cor, ...)
   txt <- format(c(r, 0.123456789), digits = digits)[1]
   txt <- paste0(prefix, txt)
   if(missing(cex.cor)) cex.cor <- 0.8/strwidth(txt)
-  text(0.5, 0.5, txt, cex = cex.cor * r)
+  text(0.5, 0.5, txt)
 }
 
 df %>% 
-  select(-nickname, -gender, -ID, - lottery) %>% 
+  ungroup() %>% 
+  select(bret, lottery, safeHL, investment) %>% 
   pairs(diag.panel = panel.hist, upper.panel = panel.cor)
 
 
@@ -184,6 +246,17 @@ r_hl <- function(choice) {
     out
 }
 
+dfr <- df %>% 
+  mutate(rbret = r_bret(bret),
+         rlottery = r_eg(lottery), 
+         rinvestment = r_invest(investment),
+         rhl = r_hl(safeHL)) %>% 
+  select(gender = nickname, starts_with("r"))
 
+dfr %>% 
+  ungroup() %>% 
+  select(-ID, -gender) %>% 
+  pairs(diag.panel = panel.hist, upper.panel = panel.cor)
+d  
 
 
