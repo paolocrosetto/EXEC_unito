@@ -53,3 +53,11 @@ It would be better if you brought your PC to class. Some experiments will be run
 ### Session 2 - Lab session
 
 -   Full risk elicitation session: <https://paolocrosetto.aidaform.com/expert-template-risk-taking-test>
+
+## Session 3
+
+### Session 3 -- classroom
+
+-   Questionnaire 1: <https://forms.gle/TyiM9pmzBhGQY1a68>
+
+-   Questionnaires 2, 3 and 4: Classex <https://classex.uni-passau.de/bin/> (INRAE -- Exec Unito - password: `unito`)
