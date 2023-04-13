@@ -61,3 +61,9 @@ It would be better if you brought your PC to class. Some experiments will be run
 -   Questionnaire 1: <https://forms.gle/TyiM9pmzBhGQY1a68>
 
 -   Questionnaires 2, 3 and 4: Classex <https://classex.uni-passau.de/bin/> (INRAE -- Exec Unito - password: `unito`)
+
+### Session 3 - Lab session
+
+-   Experimental software: <https://gaelexperience.fr/>
+
+-   Instructions: [/Experiments/session3_exp_instructions.pdf](/Experiments/session3_exp_instructions.pdf)
