@@ -15,7 +15,7 @@ It would be better if you brought your PC to class. Some experiments will be run
 
 ## Exam rules
 
-Exam rules are available here.
+Exam rules are available in the Exam section of the github repo -- [here](Exam/Exam_Rules.pdf).
 
 ## Links for experiments
 
