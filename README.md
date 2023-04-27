@@ -69,3 +69,11 @@ It would be better if you brought your PC to class. Some experiments will be run
 -   Instructions: [/Experiments/session3_exp_instructions.pdf](/Experiments/session3_exp_instructions.pdf)
 
 -   Full data and script <https://github.com/paolocrosetto/what_are_you_calling_intuitive_data_and_analysis>
+
+## Session 4
+
+### Session 4 -- classroom
+
+-   Experiment 1: <https://gaelexperience.fr/> *(and then PsychoGDA Turin Showcase)*
+
+-   Experiment 2: <https://gaelexperience.fr/> (and then blue button *Expérience en salle*)
