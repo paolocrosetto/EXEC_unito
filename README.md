@@ -13,6 +13,10 @@ Here you'll find all the material needed for the Experimental Economics course.
 
 It would be better if you brought your PC to class. Some experiments will be run with paper and pencil, but others will be run online and you'll need to have a PC to do that. Sometimes your phone might be enough, but not always.
 
+## Exam rules
+
+Exam rules are available here.
+
 ## Links for experiments
 
 ## Session 1
